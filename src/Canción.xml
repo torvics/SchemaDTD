@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE canciones [
+        <!ELEMENT canciones (cancion)*>
+        <!ELEMENT cancion (titulo|compositores|productores|sello|artista)*>
+        <!ATTLIST cancion
+                año CDATA #REQUIRED
+                duracion CDATA #REQUIRED>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT compositores (compositor)*>
+        <!ELEMENT compositor (nombres|apellidos)*>
+        <!ELEMENT nombres (#PCDATA)>
+        <!ELEMENT apellidos (#PCDATA)>
+        <!ELEMENT productores (productor)*>
+        <!ELEMENT productor (nombres|apellidos)*>
+        <!ELEMENT sello (#PCDATA)>
+        <!ELEMENT artista (#PCDATA)>
+        ]>
+<canciones>
+
+    <cancion duracion = "4:47" año = "2008">
+
+    <titulo> Give it 2 me </titulo>
+    <compositores>
+        <compositor>
+            <nombres> Pharrell </nombres>
+            <apellidos> Williams </apellidos>
+        </compositor>
+    </compositores>
+
+    <productores>
+        <productor>
+            <nombres> Pharrell </nombres>
+            <apellidos> Williams </apellidos>
+        </productor>
+    </productores>
+
+    <sello> Warner Bros. Records </sello>
+
+    <artista> Maddona </artista>
+
+    </cancion>
+
+    <cancion duracion = "3:38" año = "2014">
+
+        <titulo> Shake it off </titulo>
+        <compositores>
+            <compositor>
+                <nombres> Taylor </nombres>
+                <apellidos> Swift </apellidos>
+            </compositor>
+            <compositor>
+            <nombres> Max </nombres>
+            <apellidos> Martin </apellidos>
+        </compositor>
+        </compositores>
+
+        <productores>
+            <productor>
+                <nombres> Max </nombres>
+                <apellidos> Martin </apellidos>
+            </productor>
+        </productores>
+
+        <sello> Big Machine Records </sello>
+
+        <artista> Taylor Swift </artista>
+
+    </cancion>
+
+    <cancion duracion = "10:13" año = "2021">
+
+        <titulo> All too well (10 minutes version) (Taylor's Version) (From the Vault) </titulo>
+        <compositores>
+            <compositor>
+                <nombres> Taylor </nombres>
+                <apellidos> Swift </apellidos>
+            </compositor>
+        </compositores>
+
+        <productores>
+            <productor>
+                <nombres> Taylor </nombres>
+                <apellidos> Swift </apellidos>
+            </productor>
+        </productores>
+
+        <sello> Universal Music </sello>
+
+        <artista> Taylor Swift </artista>
+
+    </cancion>
+
+</canciones>
